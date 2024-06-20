@@ -1,9 +1,6 @@
+import LocationDetection from "@/components/LocationDetection";
 
 
 export default function Home() {
-  return (
-   <div>
-    Home page
-   </div>
-  );
+  return <LocationDetection></LocationDetection>
 }
