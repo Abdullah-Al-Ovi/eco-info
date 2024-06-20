@@ -8,10 +8,11 @@ const data = [
     { cityName: "Dhaka", latitude: 23.8103, longitude: 90.4125 }
   ];
 
-  function getLocations(){
+ export function getLocations(){
     return data;
   }
-  function name(location) {
+
+ export function getLocationByName(location) {
     if(!location) return null;
     const found = data.find((item)=>item.cityName.toLocaleLowerCase()===location.toLocaleLowerCase())
     if(!found){
